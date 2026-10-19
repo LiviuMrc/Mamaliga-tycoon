@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mămăligă Tycoon</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🌽 Mămăligă Tycoon</h1>
+    <p class="tagline">Imperiul tău de mămăligă începe cu un singur ceaun.</p>
+  </header>
+
+  <main>
+    <section class="panel stats">
+      <div class="big"><span id="count">0</span> mămăligi</div>
+      <div class="small"><span id="mps">0</span> / secundă · <span id="mpc">1</span> / click</div>
+      <button id="ceaun" aria-label="Mestecă în ceaun">
+        <span class="pot">🍲</span>
+        <span class="hint">Mestecă!</span>
+      </button>
+      <div id="event" class="event hidden"></div>
+    </section>
+
+    <section class="panel">
+      <h2>Magazin</h2>
+      <ul id="shop"></ul>
+    </section>
+
+    <section class="panel">
+      <h2>Realizări</h2>
+      <ul id="achievements"></ul>
+      <button id="reset" class="danger">Resetează jocul</button>
+    </section>
+  </main>
+
+  <div id="toast" class="toast hidden"></div>
+  <script src="game.js"></script>
+</body>
+</html>
